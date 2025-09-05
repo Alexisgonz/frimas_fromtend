@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import mondayService from './services/mondayService';
+
+// Exponer servicios para debugging en desarrollo
+if (process.env.NODE_ENV === 'development') {
+  window.mondayService = mondayService;
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,0 +1,206 @@
+.signer-mapper {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.signer-mapper h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.instructions {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.no-submitters {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 40px 20px;
+}
+
+.error-message {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.error-message h4 {
+  margin: 0 0 8px 0;
+  color: #856404;
+}
+
+.error-message p {
+  margin: 0;
+  color: #856404;
+  font-size: 0.9rem;
+}
+
+.mapping-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.role-assignment {
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+.role-info h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.role-uuid {
+  font-size: 0.8rem;
+  color: #666;
+  background: #e9ecef;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.assignment-controls {
+  margin-top: 10px;
+}
+
+.contact-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  background: white;
+  cursor: pointer;
+}
+
+.contact-select:focus {
+  outline: none;
+  border-color: #0073ea;
+  box-shadow: 0 0 0 2px rgba(0, 115, 234, 0.25);
+}
+
+.current-assignment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+}
+
+.assigned-contact {
+  color: #155724;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.clear-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-button:hover {
+  background: #c82333;
+}
+
+.mapping-summary {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e5e9;
+}
+
+.mapping-status {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.mapping-status.complete {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.mapping-status.incomplete {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+}
+
+.status-complete {
+  display: flex;
+  align-items: center;
+}
+
+.status-incomplete {
+  display: flex;
+  align-items: center;
+}
+
+.mapping-preview {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.mapping-preview h5 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.mapping-preview ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.mapping-preview li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .signer-mapper {
+    padding: 15px;
+    margin: 15px 0;
+  }
+  
+  .current-assignment {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .clear-button {
+    align-self: flex-end;
+  }
+}

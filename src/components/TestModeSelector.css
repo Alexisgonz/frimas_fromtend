@@ -1,0 +1,132 @@
+.test-mode-selector {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 2px solid #856404;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.test-mode-header {
+  margin-bottom: 15px;
+}
+
+.test-mode-header h3 {
+  margin: 0 0 8px 0;
+  color: #856404;
+  font-size: 1.2rem;
+}
+
+.test-mode-header p {
+  margin: 0;
+  color: #856404;
+  font-size: 0.9rem;
+}
+
+.loading-state {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  text-align: center;
+  color: #856404;
+}
+
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #ffeaa7;
+  border-top: 3px solid #856404;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.error-state {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  padding: 15px;
+  color: #721c24;
+}
+
+.error-state h4 {
+  margin: 0 0 8px 0;
+}
+
+.error-state p {
+  margin: 8px 0;
+}
+
+.retry-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.retry-button:hover {
+  background: #c82333;
+}
+
+.items-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.items-selector label {
+  font-weight: 600;
+  color: #856404;
+}
+
+.item-select {
+  padding: 10px 12px;
+  border: 2px solid #856404;
+  border-radius: 6px;
+  background: white;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.item-select:focus {
+  outline: none;
+  border-color: #fd7e14;
+  box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.25);
+}
+
+.current-item-info {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  color: #856404;
+  font-size: 0.9rem;
+}
+
+.no-items {
+  text-align: center;
+  color: #856404;
+  padding: 20px;
+}
+
+.no-items p {
+  margin: 8px 0;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .test-mode-selector {
+    padding: 15px;
+  }
+  
+  .loading-state {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
